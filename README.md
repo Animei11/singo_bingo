@@ -1,2 +1,2 @@
 # singo
-Website and app for singo bingo 
+Website for singo bingo 
