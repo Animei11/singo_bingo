@@ -36,6 +36,7 @@ function App() {
         setRoom(event.target.value);
       }}/>
 
+      <button onClick={joinRoom}> Join Room </button>
       <input placeholder="Message..." onChange={(event) => {
         setMessage(event.target.value);
       }}/> 
