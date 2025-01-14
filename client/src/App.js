@@ -1,6 +1,12 @@
 import "./App.css";
 import io from "socket.io-client";
 import { useEffect, useState } from "react";
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
+import { Home } from './Pages/home'
+import { Page1 } from './Pages/page1'
+import { Page2 } from './Pages/page2'
+import { Page3 } from './Pages/page3'
+
 
 const socket = io.connect("http://localhost:3001");
 
@@ -30,6 +36,15 @@ function App() {
 
   return (
     <>
+      {/* Connects different js files */}
+      <Router>
+        <Routes>
+          <Route path="/" element={ <Home/> }/>
+          <Route path="/page1" element={ <Page1/> }/>
+          <Route path="/page2" element={ <Page2/> }/>
+          <Route path="/page3" element={ <Page3/> }/>
+        </Routes>
+      </Router>
       <h1>Hello</h1>
       <ul className="list-group">
         <li className="list-group-item">An item</li>
