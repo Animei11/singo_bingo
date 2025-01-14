@@ -1,12 +1,12 @@
-import "./App.css";
-import io from "socket.io-client";
-import { useEffect, useState } from "react";
+import './App.css';
+import io from 'socket.io-client';
+import { useEffect, useState } from 'react';
 import { HashRouter as Router, Routes, Route} from 'react-router-dom';
-import { Home } from './Pages/Home';
-import { PlayerLogin } from './Pages/PlayerLogin';
-import { BingoCard } from './Pages/BingoCard';
-import { Test } from './Pages/Test';
-import { Layout } from "./Layout";
+import { Home } from './pages/Home';
+import { PlayerLogin } from './pages/PlayerLogin';
+import { BingoCard } from './pages/BingoCard';
+import { Test } from './pages/Test';
+import { Layout } from './Layout';
 
 
 const socket = io.connect("http://localhost:3001");
